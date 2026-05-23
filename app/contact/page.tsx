@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Mail, Instagram, Youtube, Twitch, MessageCircle } from "lucide-react";
+import { Mail, Instagram, Youtube, Twitch, MessageCircle, Facebook } from "lucide-react";
 import { ContactForm } from "./ContactForm";
 
 export const metadata: Metadata = {
@@ -19,16 +19,32 @@ export default function ContactPage() {
           </p>
           <div className="space-y-4">
             {[
-              { i: Mail, l: "team@steinsgate.gg" },
-              { i: Instagram, l: "@steinsgate.gg" },
-              { i: Youtube, l: "youtube.com/@steinsgate" },
-              { i: Twitch, l: "twitch.tv/steinsgate" },
-              { i: MessageCircle, l: "Discord · steinsgate" },
-            ].map(({ i: Icon, l }) => (
-              <div key={l} className="flex items-center gap-4 border border-primary/20 p-4 clip-blade hover:border-primary/60 transition-colors">
+              {
+                i: Mail,
+                l: "steinsgateesports@gmail.com",
+                href: "mailto:steinsgateesports@gmail.com",
+              },
+              {
+                i: Facebook,
+                l: "Facebook · Steins Gate Esports",
+                href: "https://www.facebook.com/SteinsGateEsports/",
+              },
+              {
+                i: MessageCircle,
+                l: "Discord · steinsgate",
+                href: "https://discord.gg/gnsRc2nb",
+              },
+            ].map(({ i: Icon, l, href }) => (
+              <a
+                key={l}
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-4 border border-primary/20 p-4 clip-blade hover:border-primary/60 transition-colors"
+              >
                 <Icon className="w-5 h-5 text-primary" />
                 <span className="font-display tracking-wider text-sm">{l}</span>
-              </div>
+              </a>
             ))}
           </div>
         </div>

@@ -23,7 +23,7 @@ export function Header() {
         <Link href="/" className="flex items-center gap-3 group">
           <img src="/logo.png" alt="Steins Gate" width={56} height={56} className="w-14 h-14 object-contain drop-shadow-[0_0_12px_oklch(0.7_0.21_45/0.6)]" />
           <div className="leading-none">
-            <div className="font-display text-xl tracking-widest text-gradient-fire">STEINS GATE</div>
+            <div className="font-display text-xl tracking-widest text-gradient-fire">STEINS GATE ESPORTS</div>
             <div className="text-[10px] tracking-[0.3em] text-muted-foreground">PUBG MOBILE · BD</div>
           </div>
         </Link>
