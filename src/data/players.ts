@@ -1,4 +1,4 @@
-export const players: Player[] = [
+export const players = [
   {
     ign: "Hunter",
     role: "IGL · Assaulter",
