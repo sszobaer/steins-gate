@@ -1,22 +1,8 @@
-export type Player = {
-  ign: string;
-  role: string;
-  bio: string;
-  img: string;
-
-  ingameName: string;
-  uid: string;
-
-  instagram: string;
-  facebook: string;
-  x: string;
-};
-
 export const players: Player[] = [
   {
     ign: "Hunter",
     role: "IGL · Assaulter",
-    bio: "The voice in the chaos. Calls every rotation, takes every clutch.",
+    bio: "The tactical backbone of the squad. Controls rotations, leads mid-game decisions, and delivers under high-pressure situations.",
     img: "/player-1.jpg",
 
     ingameName: "SGesHUNTERxyz",
@@ -30,7 +16,7 @@ export const players: Player[] = [
   {
     ign: "Toxic",
     role: "Free Style",
-    bio: "Plays without a playbook. Adapts mid-fight, finishes mid-flip.",
+    bio: "An unpredictable playmaker with explosive mechanics. Adapts instantly to changing fights and creates opportunities out of chaos.",
     img: "/player-2.jpg",
 
     ingameName: "SGesTOXICbae",
@@ -44,7 +30,7 @@ export const players: Player[] = [
   {
     ign: "Mahim",
     role: "Entry Fragger",
-    bio: "First through the door. Always. Sets the tempo for the whole squad.",
+    bio: "The first point of impact in every engagement. Breaks defensive setups, secures opening pressure, and sets the pace for team pushes.",
     img: "/player-3.jpg",
 
     ingameName: "SGesMAHIM",
@@ -58,7 +44,7 @@ export const players: Player[] = [
   {
     ign: "Arpon",
     role: "Fragger",
-    bio: "Clinical aim, surgical positioning. Trades opened for kills closed.",
+    bio: "Sharp aim combined with disciplined positioning. Converts openings into eliminations and consistently delivers during critical fights.",
     img: "/player-4.jpg",
 
     ingameName: "SGesARPON",
@@ -72,7 +58,7 @@ export const players: Player[] = [
   {
     ign: "HeatBlast",
     role: "Support",
-    bio: "Holds the line. Smokes, flashes, revives — the silent backbone.",
+    bio: "Provides crucial cover during aggressive team pushes, maintains crossfire control, and creates space that allows the squad to dominate engagements.",
     img: "/player-5.jpg",
 
     ingameName: "SGesHeaTBLasT",
